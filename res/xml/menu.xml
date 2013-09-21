@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <Preference
+        android:key="Jnu"
+        android:title="暨大助手"
+       
+    
+            
+        />
+
+    <Preference
+        android:key="zhaopin"
+        android:title="招聘信息"
+        />
+
+    <Preference
+        android:key="n"
+        android:title="登陆"
+        />
+
+
+</PreferenceScreen>

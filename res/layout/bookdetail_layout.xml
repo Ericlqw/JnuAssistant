@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	 android:background="@color/mention_background"
+	   
+	>
+
+<ScrollView
+    android:id="@+id/detailView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+   >
+
+<!-- 直接添加按钮，它自己会占一行 -->
+ <LinearLayout  
+    android:paddingBottom="60dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+	android:layout_width="fill_parent"	
+	android:layout_height="wrap_content" 
+	android:orientation="vertical">    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dip"/>
+    
+     <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  
+         android:textColor="#FF666666"         
+         />
+      <TextView
+        android:id="@+id/chubanshe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  
+         android:textColor="#FF666666"         
+         />   
+
+       <TextView
+        android:id="@+id/fuzhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  
+         android:textColor="#FF666666"          
+         />
+        <TextView
+        android:id="@+id/zaiti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   
+         android:textColor="#FF666666"        
+         />
+    <TextView
+        android:id="@+id/biaozhunhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="#FF666666"
+        />
+      <TextView
+        android:id="@+id/zhuti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="#FF666666"
+        />
+   
+      <TextView
+        android:id="@+id/loginstatue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dip"
+        android:textStyle="bold"
+         android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:text="馆 藏 分 布 情 况：" />
+      
+    <TextView
+        android:id="@+id/guancang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dip"
+        android:textStyle="bold"   
+         android:textColor="@color/black"  
+        />
+      
+      
+    
+</LinearLayout>
+
+ 
+
+ </ScrollView>
+ 
+ <RelativeLayout  
+	android:layout_width="fill_parent"	
+	android:layout_height="wrap_content" 
+	android:layout_alignParentBottom="true"
+	 android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+	android:orientation="vertical">
+
+ <include layout="@layout/buttom_bar"/>
+ </RelativeLayout>
+   
+        
+
+
+</RelativeLayout>

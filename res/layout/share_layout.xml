@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+     <RelativeLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="250dip"
+        android:layout_height="250dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/menu_bg2"
+        android:visibility="invisible" >
+
+        <Button
+            android:id="@+id/btn_sina"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:background="@drawable/selector_for_sina"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dip" />
+         <Button
+            android:id="@+id/btn_renren"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:background="@drawable/selector_for_renren"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dip" />
+         
+         
+         <Button
+            android:id="@+id/btn_qq"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:background="@drawable/selector_for_qq"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip" />
+         
+         <Button
+            android:id="@+id/btn_qqzone"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:background="@drawable/selector_for_qqzone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip" />
+         
+         <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分享"
+        android:textColor="#aaffffff" 
+        android:layout_centerInParent="true"
+        android:textSize="24dip"/>
+    </RelativeLayout>
+    
+</LinearLayout>

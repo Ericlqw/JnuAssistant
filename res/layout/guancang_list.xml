@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mention_background"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp" >
+
+    <TextView
+        android:id="@+id/xuhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textColor="#FF666666" 
+        />
+
+
+    <TextView
+        android:id="@+id/suoshuhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/xuhao"
+        android:layout_below="@+id/xuhao"             
+        android:textColor="#FF666666" />
+    
+      <TextView
+        android:id="@+id/guancangdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   
+         android:layout_alignLeft="@+id/suoshuhao"
+        android:layout_below="@+id/suoshuhao"          
+        android:textColor="#FF666666" />
+      
+        <TextView
+        android:id="@+id/zhuangtai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+         android:layout_alignLeft="@+id/guancangdi"
+        android:layout_below="@+id/guancangdi"            
+        android:textColor="#FF666666" />
+
+   
+    
+</RelativeLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+   
+    android:id="@+id/right_per_msg_center_id" >
+   
+    <!-- 顶部个人基本信息 -->
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="70dip">
+        <ImageView 
+            android:id="@+id/right_permsg_center_img_usericon"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:src="@drawable/night_biz_pc_account_avatar_bg"
+            android:scaleType="fitXY"/>
+        <TextView 
+            android:id="@+id/right_permsg_center_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/permsg_center_name"
+            android:layout_toRightOf="@id/right_permsg_center_img_usericon"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/whilte"
+            android:textSize="15sp"
+            android:layout_marginTop="13dip"/>
+        <ImageView 
+            android:id="@+id/right_permsg_center_img_icon"
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:scaleType="fitXY"
+            android:layout_toRightOf="@id/right_permsg_center_img_usericon"
+            android:layout_below="@id/right_permsg_center_tv_name"
+            android:src="@drawable/biz_pc_main_money_icon"
+            android:layout_alignLeft="@id/right_permsg_center_tv_name"/>
+        <TextView 
+            android:id="@+id/right_permsg_center_tv_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/right_permsg_center_tv_name"
+            android:layout_toRightOf="@id/right_permsg_center_img_icon"
+            android:text="@string/permsg_center_level"
+            android:textColor="@color/whilte"
+            android:layout_marginLeft="5dip"
+            android:textSize="10sp"
+            android:layout_alignBaseline="@id/right_permsg_center_img_icon"
+            android:layout_marginTop="2dip"/>
+        <ImageButton 
+            android:id="@+id/right_permsg_center_imgbtn_select"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/app_recommend_arrow"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <!-- 中间三个button  暨大 应届生 珠海 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/jnuzp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/left_btu_style"
+           
+            android:text="@string/jnu_zhaop"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/yingjiesheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yingjiesheng_zhaop"
+           
+            android:background="@drawable/left_btu_style"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            />
+        <Button
+           
+            android:id="@+id/zhuhai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zhuhai"
+           
+           android:background="@drawable/left_btu_style"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            />      
+    </LinearLayout>
+    
+    
+     <RelativeLayout  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent" >  
+    
+   <ScrollView android:id="@+id/middleView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="50px">                    
+       <TextView android:id="@+id/zp_middle_text"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />       
+   </ScrollView>
+  
+ 
+   
+     <RelativeLayout
+        android:id="@+id/relativelayout_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false" 
+        >
+                   
+        <com.spring.menu.control.ShrinkRelativeLayout
+            android:id="@+id/menus_wrapper"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:focusable="true"
+            android:clipChildren="false"
+            android:clipToPadding="false" >
+
+            <com.spring.menu.control.ImageButtonExtend
+                android:id="@+id/menu_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="100.0px"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/menu_setting"
+                android:visibility="gone" />
+
+        <!--     <com.spring.menu.control.ImageButtonExtend
+                android:id="@+id/menu_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="100.0px"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/menu_with"
+                android:visibility="gone"/>
+                
+
+           <com.spring.menu.control.ImageButtonExtend
+                android:id="@+id/menu_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="100.0px"
+                android:layout_marginLeft="110dp"
+                android:visibility="gone"
+                android:background="@drawable/menu_place" />
+              
+           -->
+            <com.spring.menu.control.ImageButtonExtend
+                android:id="@+id/menu_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="100.0px"
+                android:layout_marginLeft="110dp"
+                android:visibility="gone"
+                android:background="@drawable/menu_share" />
+
+            <com.spring.menu.control.ImageButtonExtend
+                android:id="@+id/menu_thought"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="100.0px"
+                android:layout_marginLeft="160dp"
+                android:visibility="gone"
+                android:background="@drawable/menu_thought" />
+
+         <!--    <com.spring.menu.control.ImageButtonExtend
+                android:id="@+id/menu_sleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="100.0px"
+                android:layout_marginLeft="260dp"
+                android:visibility="gone"
+                android:background="@drawable/menu_sleep" />
+                -->
+        </com.spring.menu.control.ShrinkRelativeLayout>    
+
+        <com.spring.menu.control.ShrinkRelativeLayout
+            android:id="@+id/relativelayout_shrink"
+            android:layout_width="60dp"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/main_center_button" >
+
+            <ImageView
+                android:id="@+id/imageview_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/menu_icn_plus" />
+        </com.spring.menu.control.ShrinkRelativeLayout>
+    </RelativeLayout>
+    
+     
+</RelativeLayout>
+</LinearLayout>
